@@ -3,7 +3,7 @@
     <img :src="goodsItem.show.img" alt="">
     <div class="goods-info">
       <p> {{goodsItem.title}}</p>
-      <span class="price">{{goodsItem.price}}</span>
+      <span class="price">{{goodsItem.price}} </span>
       <span class="collect">
         <img src="~assets/img/common/collect.svg">
         {{goodsItem.cfav}}
@@ -29,36 +29,39 @@
 <style scoped>
 
   .goods-item {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     position: relative;
     width: 48%;
   }
 
   .goods-item img {
     width: 100%;
-    border-radius: 5px;
+    #border-radius: 5px;
   }
 
   .goods-info {
     font-size: 12px;
-    position: absolute;
+    #position: absolute;
+    width: 100%;
     bottom: 5px;
     left: 0;
     right: 0;
     overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
     text-align: center;
   }
 
 
   .price {
     color: #ff8198;
-    text-align: right;
+    text-align: center;
     width: 50%;
   }
 
   .collect {
     width: 50%;
-    text-align: left;
+    text-align: center;
   }
 
   .collect img {

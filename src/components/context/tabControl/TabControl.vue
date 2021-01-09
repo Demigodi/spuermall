@@ -28,6 +28,8 @@
       methods: {
         tabControlClick(index) {
           this.currentIndex = index
+          console.log('tab'+index)
+          this.$emit('tabClick',index)
         }
       }
     }
@@ -41,6 +43,7 @@
       font-size: 15px;
       height: 40px;
       line-height: 40px;
+      color: black;
     }
 
     .tab-control-item span {
